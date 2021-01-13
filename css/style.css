@@ -72,6 +72,17 @@ header nav {
     padding: var(--margingrid);
 }
 
+/* correccion margenes a causa de floats o clearfix (clear float) */
+
+header nav .container:after{
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+/* fin clearfix */
+
 header nav .hamburguesa{
     cursor: pointer; /* hace que todo sea boton */
 }
@@ -113,6 +124,76 @@ header nav .hamburguesa div{
 }
 
 /* fin header */
+
+
+/* inicio hero */
+
+.hero{
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+    background-color: #777;
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.hero h1{
+    font-family: var(--fuente2);
+    font-size: 2.25em;
+}
+
+.hero h2{
+    color: var(--color1);
+    margin: var(--margingrid) 0;
+    font-size: 1.25em;
+}
+
+.hero p{
+    font-size: 1.15em;
+}
+
+.boton{
+    display: inline-block; /* necesitamos que sea clickable por todas partes */
+    background-color: var(--color1);
+    padding: var(--margingrid);
+    color: white;
+    text-decoration: none;
+    margin: var(--margingrid) 0;
+    border: 1px solid var(--color1) /* necesario para que al hacer hover no haya 1 px de desfase */
+}
+
+.boton:hover{
+    background: transparent;
+    border: 1px solid var(--color1)
+}
+
+.boton:hover i{
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+
+.hero .social{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.hero .social a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* fin hero */
 
 
 /* inicio footer */
