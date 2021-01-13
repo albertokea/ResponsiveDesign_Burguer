@@ -31,6 +31,13 @@ img{
     --anchomaximo: 1100px;
 }
 
+/* la clase wrapper nos permitiria añadir publicidad en los margenes a derecha e izquierda si quisiesemos
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
 body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
@@ -198,7 +205,8 @@ header nav .hamburguesa div{
 /* inicio ourservices */
 
 main section{
-    padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
+    padding: calc(var(--margingrid)*3) var(--margingrid);
+
 }
 
 main section h2{
@@ -274,6 +282,45 @@ main section p{
 
 /* fin ourservices */
 
+/* inicio aboutus */
+
+main #aboutus .flex .column{
+    margin: var(--margingrid) 0;
+}
+
+main #aboutus .column h3{
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main #aboutus .column h4{
+    margin: 0.8em 0;
+    color: var(--color1);
+}
+
+main #aboutus .imagen{
+    width: 95%;
+    margin: var(--margingrid) auto;
+}
+
+main #aboutus .imagen .marco{
+    border: 3px solid var(--color1);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover .marco,
+ main #aboutus .imagen:hover .marco img{
+    transform: rotateZ(0deg);
+}
+
+/* fin aboutus */
+
 
 /* inicio footer */
 
@@ -301,7 +348,7 @@ footer a:hover{
     display: block;
     color: var(--color1);
     position: fixed;
-    bottom: 60px;
+    bottom: 5%px;
     right: 10px;
     font-size: 250%;
 }
@@ -326,6 +373,18 @@ footer a:hover{
         border-bottom: 0px;
         border-left: 1px solid #aaa;
         padding: var(--margingrid);
+    }
+
+    main #aboutus .flex{
+        display: flex;
+    }
+
+    main #aboutus .imagen{
+        width: 80%;
+    }
+
+    main #aboutus{
+        margin-bottom: 2em;
     }
 
 }
