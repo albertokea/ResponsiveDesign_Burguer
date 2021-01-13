@@ -11,6 +11,8 @@ font-family: 'Handlee', cursive; */
 
 html{
     scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
 }
 
 img{
@@ -113,6 +115,40 @@ header nav .hamburguesa div{
 /* fin header */
 
 
+/* inicio footer */
+
+
+footer{
+    background-color: var(--color2);
+    padding: var(--margingrid) 0px;
+    color: white;
+    text-align: center;
+    position: absolute; /* posible porque ya hemos hecho un cambio de eje en html */
+    width: 100%;
+    bottom: 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--color1);
+}
+
+.flecha a{
+    display: block;
+    color: var(--color1);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
+}
+
+/* fin footer */
+
+
 /* mediaquerys */
 
 @media(min-width: 768px){
@@ -123,6 +159,10 @@ header nav .hamburguesa div{
 
     header .nav-top a i{
         font-size: 120%;
+    }
+
+    footer{
+        text-align: left;
     }
 }
 
