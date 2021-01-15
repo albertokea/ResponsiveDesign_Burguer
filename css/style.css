@@ -284,6 +284,11 @@ main section p{
     transform: rotateY(180deg);
 }
 
+#ourservices a:hover i {
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+
 /* fin ourservices */
 
 /* inicio aboutus */
@@ -323,6 +328,9 @@ main #aboutus .imagen:hover .marco,
     transform: rotateZ(0deg);
 }
 
+#aboutus a:hover{
+    color: var(--color1)
+}
 /* fin aboutus */
 
 
@@ -377,6 +385,10 @@ main #aboutus .imagen:hover .marco,
     margin-top: 0.25em;
 }
 
+#blog .articulos .imagen:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
 
 /* fin blog  */
 
