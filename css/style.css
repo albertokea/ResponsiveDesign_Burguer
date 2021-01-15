@@ -277,7 +277,7 @@ main section p{
 }
 
 .enlace i{
-    margin-left: 0.3em;
+    margin-left: 0.5em;
 }
 
 .fa-truck{
@@ -325,11 +325,60 @@ main #aboutus .imagen:hover .marco,
 
 /* fin aboutus */
 
+
 /* inicio blog */
 
+#blog .articulos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+#blog .articulos{
+    margin: var(--margingrid) calc(var(--margingrid)*0.75);
+}
+
+#blog .articulos h3{
+    font-weight: 700;
+    font-size: 110%;
+    margin-top: var(--margingrid);
+}
+
+#blog .articulos h4{
+    color: var(--color1);
+    margin: var(--margingrid) 0;
+    font-size: calc(var(--fontsize)*0.75);
+    font-weight: 700;
+}
+
+#blog .articulos p{
+    font-size: calc(var(--fontsize)*0.7);
+}
+
+#blog .articulos a{
+    font-size: calc(var(--fontsize)*0.75);
+}
+#blog .imagen{
+    position: relative;
+}
+
+#blog .articulos .cuadradito-naranja{
+    position: absolute;
+    background-color: var(--color1);
+    width: 3em;
+    height: 3em;
+    opacity: 0.8;
+}
+
+#blog .articulos .cuadradito-naranja p{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 0.25em;
+}
 
 
-/* fin blog */
+/* fin blog  */
 
 
 
@@ -423,6 +472,16 @@ footer a:hover{
     main #ourservices .grid article:last-child{
         grid-column: 3 / 4;
     }
+
+    footer p{
+        margin-left: 2%;
+    }
+
+    #blog .articulos-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 
 }
 
