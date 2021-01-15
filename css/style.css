@@ -276,6 +276,10 @@ main section p{
     font-weight: 700;
 }
 
+.enlace i{
+    margin-left: 0.3em;
+}
+
 .fa-truck{
     transform: rotateY(180deg);
 }
@@ -321,6 +325,14 @@ main #aboutus .imagen:hover .marco,
 
 /* fin aboutus */
 
+/* inicio blog */
+
+
+
+/* fin blog */
+
+
+
 
 /* inicio footer */
 
@@ -348,7 +360,7 @@ footer a:hover{
     display: block;
     color: var(--color1);
     position: fixed;
-    bottom: 5%px;
+    bottom: 5%;
     right: 10px;
     font-size: 250%;
 }
