@@ -229,7 +229,6 @@ main section .underline{
     width: 100px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: var(--color1);
 }
 
 main section .underline hr{
@@ -288,7 +287,7 @@ main section p{
     transform: rotateY(180deg);
 }
 
-#ourservices a:hover i {
+section a:hover i {
     transform: translateX(5px);
     transition: 0.5s;
 }
@@ -394,11 +393,6 @@ main #aboutus .imagen:hover .marco,
     transition: 1s;
 }
 
-#blog .articulos a:hover i {
-    transform: translateX(5px);
-    transition: 0.5s;
-}
-
 /* fin blog  */
 
 /* inicio menu-comida */
@@ -427,7 +421,7 @@ main #aboutus .imagen:hover .marco,
     background-color: var(--color1);
 }
 
-#menu-comida .container{
+#menu-comida .nav-container{
     margin-top: 3em;
 }
 
@@ -435,20 +429,33 @@ main #aboutus .imagen:hover .marco,
     margin-top: 3em;
 }
 
-#menu-comida .hot-offers .underline{
-    width: 2em;
-    text-align: left;
-}
-
-#menu-comida .hot-offers .underline hr{
-    right: 46.5vw;
-}
-
 #menu-comida p{
     margin-top: var(--margingrid);
     color: white;
     font-size: calc(var(--fontsize)*0.75);
-    padding: 1em;
+}
+
+#menu-comida img{
+    margin: var(--margingrid) auto;
+    max-width: 30em;
+
+}
+
+#menu-comida .comida a{
+    font-size: calc(var(--fontsize)*0.75);
+}
+
+#menu-comida .comida span{
+    color: var(--color1);
+    margin-left: var(--margingrid);
+}
+
+#menu-comida .comida-container{
+    margin: calc(var(--margingrid)*2) 0;
+}
+
+#menu-comida .comida div{
+    margin: auto var(--margingrid);
 }
 
 /* fin menu-comida */
@@ -552,8 +559,6 @@ footer a:hover{
         grid-template-columns: repeat(3, 1fr);
     }
 
-
-
 }
 
 @media(min-width: 1004px){
@@ -575,4 +580,28 @@ footer a:hover{
         border: 0px;
         padding: 0.5em calc(var(--margingrid));
     }
+
+    #menu-comida .container{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #menu-comida .nav-container{
+        width: 20%;
+    }
+
+    #menu-comida .comida-container{
+        width: 60%;
+    }
+
+    #menu-comida .comida-container img{
+        max-width: 10em;
+        margin-left: calc(var(--margingrid)*3);
+    }
+
+    #menu-comida .comida{
+        display: flex;
+        justify-items: flex-start;
+    }
+
 }
