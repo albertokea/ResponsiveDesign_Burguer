@@ -130,6 +130,10 @@ header nav .hamburguesa div{
     width: 2em;
 }
 
+header .menu a:hover{
+    color: var(--color1);
+}
+
 /* fin header */
 
 
@@ -388,6 +392,11 @@ main #aboutus .imagen:hover .marco,
 #blog .articulos .imagen:hover{
     transform: scale(1.05);
     transition: 1s;
+}
+
+#blog .articulos a:hover i {
+    transform: translateX(5px);
+    transition: 0.5s;
 }
 
 /* fin blog  */
