@@ -142,7 +142,7 @@ header .menu a:hover{
 .hero{
     background-image: url(../images/fondo.jpg);
     height: 60vh;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-color: #777;
     background-blend-mode: multiply;
@@ -401,7 +401,57 @@ main #aboutus .imagen:hover .marco,
 
 /* fin blog  */
 
+/* inicio menu-comida */
 
+#menu-comida{
+    background-color: var(--color2);
+}
+
+#menu-comida h2{
+    color: white;
+}
+
+#menu-comida h3{
+    color: white;
+    font-weight: 700;
+}
+
+#menu-comida nav a{
+    color: white;
+    text-decoration: none;
+    padding: calc(var(--margingrid)*0.5);
+    display: block;
+}
+
+.menu-active{
+    background-color: var(--color1);
+}
+
+#menu-comida .container{
+    margin-top: 3em;
+}
+
+#menu-comida .hot-offers{
+    margin-top: 3em;
+}
+
+#menu-comida .hot-offers .underline{
+    width: 2em;
+    text-align: left;
+}
+
+#menu-comida .hot-offers .underline hr{
+    right: 46.5vw;
+}
+
+#menu-comida p{
+    margin-top: var(--margingrid);
+    color: white;
+    font-size: calc(var(--fontsize)*0.75);
+    padding: 1em;
+}
+
+/* fin menu-comida */
 
 
 /* inicio footer */
